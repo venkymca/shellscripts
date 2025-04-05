@@ -1,0 +1,20 @@
+#!/bin/bash
+
+echo "script to install git"
+echo "Installation started"
+
+if [ "$(uname)" == "Linux" ]; then 
+ 
+   echo "this is Linux box, installing git"
+   yum install git -y
+
+elif [ "$(uname)" == "Darwin" ];then 
+
+  echo "this is mac box"
+  brew install git -y
+
+else
+
+ echo "not installing git"	
+
+fi
