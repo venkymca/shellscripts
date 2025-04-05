@@ -1,0 +1,102 @@
+# Shell script Introduction #
+
+**Shell**:
+
+. shell is a command-line interpreter, shell executes the commands or scripts.
+
+. shell translate the high level language to machine level Language.
+
+. shell is a user interface for access to an os services.
+
+**Shell script**
+
+. Shell script is a sequence of commands these are written in a text file.
+    
+    . shell script is used to automate the system.
+    . taking backups
+    . system monitoring
+    . system installation and configuration etc.
+
+
+. It reduces the lot of manual jobs and increase the efficiency
+
+. shell scripting is a great way to automate repetitive tasks
+
+.  shell execute the commands line by line 
+
+
+**FLOW:**
+
+User will access a shell and on the shell we will type a command 'date' and shell converts
+the command into binaries and forward to kernal and kernal run the command on hardware and hardware will give the output to kernal and it's forward to shell and shell converts the binaries into user language and give it the user.
+
+
+**Types of os shell:**
+
+1) .sh
+2) .bash
+3) .tcsh
+4) .csh
+5) .nologin
+
+ =>  Most popular and advanced shell is 'bash'
+
+
+**How to check the shells in from Linux(ubuntu) machine:**
+
+1. echo $SHELL 		   - display default shell
+2. env | grep SHELL    - display the default shell (using environment variable)
+3. cat /etc/shells     - to know the all types of shells
+4. which bash          - to know the path of the bash
+
+
+
+**shebang or interpreter:**
+
+*  shebang is nothing but a on which shell you wan to run the shell script.
+
+*  #!/bin/bash
+
+		here,
+
+          #! 	  : is called shebang or hashbang
+
+          /bin/bash: bash shell, which we are going to run the commands
+
+* it must be first line in the shell script.
+
+* the shebang plays an important role in shell scripting, specially while dealing with different types of shells.
+ 
+
+**Basic steps to write and execute shell scripts:**
+
+step 1: get requirements and it's commands 
+
+step 2: choose which shell you are goin to use execute the commands 
+
+step 3: create a one file with the .sh extention  
+        
+		sudo vim welcome.sh 
+        
+		#!/bin/bash
+        echo "Welcome to the shell script"
+
+
+step 4: give the write permission to execute the file 
+        
+		sudo chmod u+x welcome.sh 
+
+
+step 5: exectue/run the file 
+   
+         sudo ./welcome.sh  				      --> if you are execute the file from same directory 
+		  
+		      (or) 
+        
+         sudo /home/ubuntu/welcome.sh 		--> full path of your file 
+
+           (or)
+        
+		      sh welcome.sh     					    --> using with sh command, if the file doesn't have write permission 
+         
+		 

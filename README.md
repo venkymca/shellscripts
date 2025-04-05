@@ -1,2 +1,0 @@
-# shellscripts
-Shell Scripts Examples
