@@ -1,0 +1,24 @@
+# echo command 
+
+The echo command in shell scripting is commonly used to display text or variables to the user.
+
+Syntax:
+
+   echo [-neE] "arguments"
+
+   -n (No newline): 
+      
+       . By default, echo adds a newline at the end, but -n stops that.
+
+   -e (Enable escape sequences):
+   
+       . This option enables the interpretation of escape sequences (such as \n for a new line, \t for a tab, etc.)
+       . If you don’t use -e, escape sequences will be treated as normal characters and won’t perform their special function.
+       
+   
+   -E (Disable escape sequences):
+
+      . his option explicitly disables the interpretation of escape sequences. 
+      . Even if escape sequences are included in the argument, they are treated as regular text.
+   
+
